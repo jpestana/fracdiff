@@ -1,6 +1,6 @@
 function [c,r] = Ex1_Gen_Toep(n)
 
-% function [c,r] = Ex1_Gen_Toep(n)
+% [c,r] = Ex1_Gen_Toep(n)
 %
 % Generates Toeplitz matrix in Example 1 from J. Pestana, Preconditioners 
 % for symmetrized Toeplitz and multilevel Toeplitz matrices, 2018.

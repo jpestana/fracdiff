@@ -1,6 +1,6 @@
 function [diagel,Asmtmult,Ac] = vcycle_fastmv_setup(col,row,num_levels)
 
-% function [diagel,Asmtmult,Ac] = vcycle_fastmv_setup(col,row,num_levels)
+% [diagel,Asmtmult,Ac] = vcycle_fastmv_setup(col,row,num_levels)
 % 
 % Computes quantities required by vcycle_fastmv_nr for V-cycle multigrid 
 % applied to a Toeplitz matrix A

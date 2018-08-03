@@ -1,6 +1,6 @@
 function [t,it,rv] = Ex2_Const_Nu_Alpha_Run
 
-% function [t,it,rv] = Ex2_Const_Nu_Alpha_Run
+% [t,it,rv] = Ex2_Const_Nu_Alpha_Run
 %
 % Example 2, Table 5.3 from J. Pestana, Preconditioners for symmetrized 
 % Toeplitz and multilevel Toeplitz matrices, 2018.
@@ -201,11 +201,11 @@ for gr = 1:n_grid
         U6 = zeros(N,mtstep);
         tic;
         if alpha <= 1.4
-            [colaf,rowaf] = Ex2GenToep_AF(N,nu,alpha,d1,d2,ceil(50));
+            [colaf,rowaf] = Ex2_Gen_Toep_AF(N,nu,alpha,d1,d2,ceil(50));
         elseif alpha >1.4 && alpha < 1.6
-            [colaf,rowaf] = Ex2GenToep_AF(N,nu,alpha,d1,d2,ceil(40*1.1^(lev)));
+            [colaf,rowaf] = Ex2_Gen_Toep_AF(N,nu,alpha,d1,d2,ceil(40*1.1^(lev)));
         else
-            [colaf,rowaf] = Ex2GenToep_AF(N,nu,alpha,d1,d2,ceil(100*1.1^lev));
+            [colaf,rowaf] = Ex2_Gen_Toep_AF(N,nu,alpha,d1,d2,ceil(100*1.1^lev));
         end
         [diagel,Asm,Ac] = vcycle_fastmv_setup(colaf,rowaf,stoplev);
         for ts = 1:mtstep

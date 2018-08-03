@@ -1,6 +1,6 @@
 function [c,r] = Ex1_Gen_Toep_Abs_F(n)
 
-% function [c,r] = Ex1_Gen_Toep_Abs_F(n)
+% [c,r] = Ex1_Gen_Toep_Abs_F(n)
 %
 % Generates absolute value Toeplitz matrix A(|f|) for Example 1 from 
 % J. Pestana, Preconditioners for symmetrized Toeplitz and multilevel 

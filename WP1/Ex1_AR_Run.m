@@ -1,6 +1,6 @@
 function [iv,tv,rv] = Ex1_AR_Run
 
-% function [it,tv,rv] = Ex1_AR_Run
+% [it,tv,rv] = Ex1_AR_Run
 %
 % Example 1, Table 5.1 from J. Pestana, Preconditioners for symmetrized 
 % Toeplitz and multilevel Toeplitz matrices, 2018.

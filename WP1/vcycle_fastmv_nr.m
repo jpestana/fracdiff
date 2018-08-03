@@ -1,6 +1,6 @@
 function [u] = vcycle_fastmv_nr(diagel,Asm,Ac,f,num_presteps,num_poststeps,num_levels,omeg)
 
-% function [u] = vcycle_fastmv_nr(diagel,Asm,Ac,f,num_presteps,num_poststeps,num_levels,omeg)
+% [u] = vcycle_fastmv_nr(diagel,Asm,Ac,f,num_presteps,num_poststeps,num_levels,omeg)
 %
 % Performs 1 multigrid V cycle for a Toeplitz matrix. Requires quantities
 % computed in vcycle_fastmv_setup.m. Non-recursive algorithm. Assumes 0
